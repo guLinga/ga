@@ -21,7 +21,7 @@ signInBtn[1].onclick=function(){
     }
 }
 signInBtn[2].onclick=function(){
-    if(signInInput[2].value=="3213"){
+    if(signInInput[2].value=="1964"){
         window.location.href="template/LOVE.html";
         signInInput[2].value="";
     }else{
