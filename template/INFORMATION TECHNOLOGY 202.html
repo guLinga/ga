@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INFORMATION TECHNOLOGY 202</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height:100%;
+            width:100%;
+        }
+        html{
+            height:100%;
+            width:100%;
+        }
+        .background{
+            height:100%;
+            width:100%;
+            position: relative;
+        }
+        .w{
+            width:300px;
+            margin: 0 auto;
+        }
+        .randomContainer{
+            margin-top: 50px;
+        }
+        .randomH2{
+            text-align: center;
+        }
+        .randomInput{
+            height:50px;
+            width:100%;
+            padding: 0 30px;
+            border: 1px solid black;
+        }
+        .randomBtn{
+            height: 50px;
+            width: 100%;
+            margin-top: 20px;
+            border: 0;
+            background-color: black;
+            color: #ffffff;
+            cursor: pointer;
+        }
+        .randomInputContainer{
+            height:50px;
+            width:100%;
+            margin-top: 50px;
+            position:relative;
+        }
+        .warn{
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            border: 1px solid red;
+            color: red;
+            padding: 2px 5px;
+            display: none;
+        }
+        .people{
+            height:30px;
+            width: 100%;
+            text-align: center;
+            margin-top: 10px;
+            background-color: black;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div class="background">
+        <div class="w randomContainer">
+            <h2 class="randomH2">信工202随机抽人系统</h2>
+            <div class="randomInputContainer">
+                <input class="randomInput" type="text" placeholder="请输入随机抽取的人数(1-29)">
+                <div class="warn">请输入正确的数据</div>
+            </div>
+            <input class="randomBtn" type="button" value="随机抽人">
+            <div class="addPeople"></div>
+        </div>
+    </div>
+
+    <script>
+        var addPeople=document.getElementsByClassName("addPeople")[0];
+        var randomInput=document.getElementsByClassName("randomInput")[0];
+        var randomBtn=document.getElementsByClassName("randomBtn")[0];
+        var warn=document.getElementsByClassName("warn")[0];
+        var classNamea = new Array();
+        classNamea[1] = "20201524201 邱俊豪";
+        classNamea[2] = "20201524202 李德瑞";
+        classNamea[3] = "20201524203 孙浩";
+        classNamea[4] = "20201524205 李浩然";
+        classNamea[5] = "20201524206 范浩森";
+        classNamea[6] = "20201524207 徐鹏翔";
+        classNamea[7] = "20201524208 李硕";
+        classNamea[8] = "20201524209 王锦博";
+        classNamea[9] = "20201524210 郜帅聪";
+        classNamea[10] = "20201524211 姬林远";
+        classNamea[11] = "20201524212 姚松桥";
+        classNamea[12] = "20201524213 余海龙";
+        classNamea[13] = "20201524214 舒星琪";
+        classNamea[14] = "20201524215 郭贤慧";
+        classNamea[15] = "20201524216 徐佳恩";
+        classNamea[16] = "20201524217 高宏祥";
+        classNamea[17] = "20201524218 杨福旺";
+        classNamea[18] = "20201524219 张孝洵";
+        classNamea[19] = "20201524220 陈炳庚";
+        classNamea[20] = "20201524221 田青福";
+        classNamea[21] = "20201524222 盛轩";
+        classNamea[22] = "20201524223 李黎";
+        classNamea[23] = "20201524224 王露";
+        classNamea[24] = "20201524225 张金";
+        classNamea[25] = "20201524226 胡梦圆";
+        classNamea[26] = "20201524227 陈会";
+        classNamea[27] = "20201524228 韩鑫鑫";
+        classNamea[28] = "20201524229 李嘉琪";
+        classNamea[29] = "20201524230 杨昭芝";
+        randomInput.onfocus=function(){
+            warn.style.display="none";
+        }
+        randomBtn.onclick=function(){
+            var child=addPeople.lastElementChild;
+            while(child){
+                addPeople.removeChild(child);
+                child=addPeople.lastElementChild;
+            }     
+            if(randomInput.value==""){
+                warn.style.display="block";
+            }else if(randomInput.value>29){
+                warn.style.display="block";
+            }else if(randomInput.value<=0){
+                warn.style.display="block";
+            }else{
+                var number=new Array();
+                for(let i=1;i<=randomInput.value;i++){
+                    number[i]=Math.ceil(Math.random()*29);
+                    var ans=0;
+                    for(let j=1;j<=i;j++){
+                        if(number[i]==number[j]){
+                            ans++;
+                        }
+                    }
+                        while(ans!=1){
+                            number[i]=Math.ceil(Math.random()*29);
+                            var ans=0;
+                            for(let j=1;j<=i;j++){
+                            if(number[i]==number[j]){
+                                ans++;
+                            }
+                        }
+                    }
+                }
+                    for(let i=1;i<=randomInput.value;i++){
+                    var people=document.createElement("div");
+                    people.className="people";
+                    addPeople.appendChild(people);
+                    var People=document.getElementsByClassName("people");
+                    People[i-1].innerHTML=classNamea[number[i]];
+                }
+            }
+        }
+    </script>
+</body>
+</html>
