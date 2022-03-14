@@ -1,0 +1,1169 @@
+<html class=" ">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
+    <title>第二十八周总结 - 1514’s Blog</title>
+    <link rel="shortcut icon" href="http://81.68.101.184/me/usr/themes/Cuckoo/assets/images/favicon.ico">
+    <link rel="stylesheet" href="../css/mdui.min.css">
+    <link rel="stylesheet" href="../css/cuckoo.min.css">
+    <link rel="stylesheet" href="../css/atom-one-dark.min.css">
+    <link rel="stylesheet" href="../css/iconfont.min.css">
+    <link rel="stylesheet" href="../css/fancybox.min.css">
+    <meta name="description" content="Just So So ...">
+    <meta name="keywords" content="typecho,php,blog">
+    <meta name="generator" content="Typecho 1.1/17.10.30">
+    <meta name="template" content="Cuckoo">
+    <link rel="pingback" href="http://81.68.101.184/me/index.php/action/xmlrpc">
+    <link rel="EditURI" type="application/rsd+xml" title="RSD"
+        href="http://81.68.101.184/me/index.php/action/xmlrpc?rsd">
+    <link rel="wlwmanifest" type="application/wlwmanifest+xml"
+        href="http://81.68.101.184/me/index.php/action/xmlrpc?wlw">
+    <link rel="alternate" type="application/rss+xml" title="1514 » RSS 2.0"
+        href="http://81.68.101.184/me/index.php/feed/">
+    <link rel="alternate" type="application/rdf+xml" title="1514 » RSS 1.0"
+        href="http://81.68.101.184/me/index.php/feed/rss/">
+    <link rel="alternate" type="application/atom+xml" title="1514 » ATOM 1.0"
+        href="http://81.68.101.184/me/index.php/feed/atom/">
+    <style>
+        .index-filter {
+            display: none
+        }
+    </style>
+    <style>
+        .comment-textarea {
+            background-image: url("http://81.68.101.184/me/usr/themes/Cuckoo/assets/images/textarea.png");
+        }
+
+        .index-img {
+            background-image: url("http://81.68.101.184/me/usr/themes/Cuckoo/assets/images/loading.gif")
+        }
+    </style>
+    <style>
+        .background {
+            background-image: url("http://81.68.101.184/me/usr/themes/Cuckoo/assets/images/bg.jpg");
+        }
+    </style>
+    <style>
+        html {
+            --color: rgb(33, 150, 243);
+        }
+    </style>
+</head>
+
+<body class="mdui-theme-primary-blue mdui-theme-accent-blue mdui-loaded">
+    <div class="background">
+        <div class="index-filter"></div>
+    </div>
+
+    <div
+        class="mdui-appbar mdui-shadow-0 mdui-appbar-fixed mdui-appbar-scroll-hide mdui-headroom mdui-headroom-pinned-top">
+        <div class="mdui-toolbar">
+            <a class="mdui-btn mdui-btn-icon"
+                mdui-drawer="{target: &#39;.drawer&#39;, swipe: &#39;true&#39;, overlay: &#39;false&#39;}">
+                <i class="mdui-icon material-icons">menu</i>
+            </a>
+            <a href="http://81.68.101.184/me/" class="mdui-typo-title" data-pjax-state="">1514’s Blog</a>
+            <div class="mdui-toolbar-spacer"></div>
+            <div class="mdui-textfield mdui-textfield-expandable mdui-float-right appbar-search">
+                <button class="mdui-textfield-icon mdui-btn mdui-btn-icon"><i
+                        class="mdui-icon material-icons">search</i></button>
+                <form id="search" method="post" action="http://81.68.101.184/me/" role="search">
+                    <input class="mdui-textfield-input" type="text" id="s" name="s" placeholder="搜索一下">
+                    <button type="submit" style="display:none;">搜索</button>
+                </form>
+                <button class="mdui-textfield-close mdui-btn mdui-btn-icon"><i
+                        class="mdui-icon material-icons">close</i></button>
+            </div>
+            <button class="mdui-btn mdui-btn-icon qrcode" mdui-menu="{target: &#39;#qrcode&#39;}"
+                mdui-tooltip="{content: &#39;跨设备阅读&#39;}" style="display: block;"><i
+                    class="mdui-icon material-icons">devices</i></button>
+            <div class="mdui-menu" id="qrcode"
+                style="width: 170px;height: 170px;transform-origin: 100% 0px; position: fixed; text-align:center;">
+                <div style="margin-top: 63px;" class="mdui-spinner mdui-spinner-colorful">
+                    <div class="mdui-spinner-layer mdui-spinner-layer-1">
+                        <div class="mdui-spinner-circle-clipper mdui-spinner-left">
+                            <div class="mdui-spinner-circle"></div>
+                        </div>
+                        <div class="mdui-spinner-gap-patch">
+                            <div class="mdui-spinner-circle"></div>
+                        </div>
+                        <div class="mdui-spinner-circle-clipper mdui-spinner-right">
+                            <div class="mdui-spinner-circle"></div>
+                        </div>
+                    </div>
+                    <div class="mdui-spinner-layer mdui-spinner-layer-2">
+                        <div class="mdui-spinner-circle-clipper mdui-spinner-left">
+                            <div class="mdui-spinner-circle"></div>
+                        </div>
+                        <div class="mdui-spinner-gap-patch">
+                            <div class="mdui-spinner-circle"></div>
+                        </div>
+                        <div class="mdui-spinner-circle-clipper mdui-spinner-right">
+                            <div class="mdui-spinner-circle"></div>
+                        </div>
+                    </div>
+                    <div class="mdui-spinner-layer mdui-spinner-layer-3">
+                        <div class="mdui-spinner-circle-clipper mdui-spinner-left">
+                            <div class="mdui-spinner-circle"></div>
+                        </div>
+                        <div class="mdui-spinner-gap-patch">
+                            <div class="mdui-spinner-circle"></div>
+                        </div>
+                        <div class="mdui-spinner-circle-clipper mdui-spinner-right">
+                            <div class="mdui-spinner-circle"></div>
+                        </div>
+                    </div>
+                    <div class="mdui-spinner-layer mdui-spinner-layer-4">
+                        <div class="mdui-spinner-circle-clipper mdui-spinner-left">
+                            <div class="mdui-spinner-circle"></div>
+                        </div>
+                        <div class="mdui-spinner-gap-patch">
+                            <div class="mdui-spinner-circle"></div>
+                        </div>
+                        <div class="mdui-spinner-circle-clipper mdui-spinner-right">
+                            <div class="mdui-spinner-circle"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button onclick="brightness()" id="brightness" class="mdui-textfield-close mdui-btn mdui-btn-icon"><i
+                    class="mdui-icon material-icons">brightness_5</i></button>
+        </div>
+    </div>
+    <div class="mdui-drawer mdui-drawer-close mdui-drawer-full-height drawer">
+        <div class="drawer-img"><img class="mdui-img-circle" src="../img/me.jpg"></div>
+        <div class="drawer-contact">
+            <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;site=qq&amp;menu=yes&amp;uin=2634917964"><button
+                    class="mdui-btn mdui-btn-icon mdui-ripple"><i class="iconfont icon-qq"></i></button></a>
+        </div>
+        <div class="mdui-divider"></div>
+        <ul class="mdui-list drawer-list" mdui-collapse="{accordion: true}">
+            <a href="../index.html" data-pjax-state="">
+                <li class="mdui-list-item mdui-ripple"><i class="mdui-list-item-icon mdui-icon material-icons">home</i>
+                    <div class="mdui-list-item-content">首页</div>
+                </li>
+            </a>
+            <li class="mdui-collapse-item">
+                <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+                    <i class="mdui-icon material-icons mdui-list-item-icon">view_list</i>
+                    <div class="mdui-list-item-content">分类</div>
+                    <!-- <i
+                        class="mdui-icon material-icons mdui-list-item-icon mdui-collapse-item-arrow">keyboard_arrow_down</i> -->
+                        <i
+                        class="mdui-icon material-icons mdui-list-item-icon mdui-collapse-item-arrow" style="transform: rotate(0deg)">keyboard_arrow_down</i>
+                </div>
+                <ul class="mdui-collapse-item-body mdui-list mdui-list-dense"><a
+                        href="http://81.68.101.184/me/index.php/category/default/" class="mdui-list-item mdui-ripple"
+                        mdui-drawer-close="" data-pjax-state="">
+                        <div class="mdui-list-item-content">默认分类</div>
+                        <div class="drawer-item">0</div>
+                    </a><a href="http://81.68.101.184/me/index.php/category/First/" class="mdui-list-item mdui-ripple"
+                        mdui-drawer-close="" data-pjax-state="">
+                        <div class="mdui-list-item-content">First</div>
+                        <div class="drawer-item">1</div>
+                    </a><a href="http://81.68.101.184/me/index.php/category/conclusion/"
+                        class="mdui-list-item mdui-ripple" mdui-drawer-close="" data-pjax-state="">
+                        <div class="mdui-list-item-content">总结</div>
+                        <div class="drawer-item">29</div>
+                    </a><a href="http://81.68.101.184/me/index.php/category/essays/" class="mdui-list-item mdui-ripple"
+                        mdui-drawer-close="" data-pjax-state="">
+                        <div class="mdui-list-item-content">随笔</div>
+                        <div class="drawer-item">2</div>
+                    </a><a href="http://81.68.101.184/me/index.php/category/knowledge/"
+                        class="mdui-list-item mdui-ripple" mdui-drawer-close="" data-pjax-state="">
+                        <div class="mdui-list-item-content">知识点总结</div>
+                        <div class="drawer-item">6</div>
+                    </a></ul>
+            </li>
+            <li class="mdui-collapse-item">
+                <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+                    <i class="mdui-icon material-icons mdui-list-item-icon">access_time</i>
+                    <div class="mdui-list-item-content">归档</div>
+                    <i
+                        class="mdui-icon material-icons mdui-list-item-icon mdui-collapse-item-arrow">keyboard_arrow_down</i>
+                </div>
+                <ul class="mdui-collapse-item-body mdui-list mdui-list-dense"><a
+                        href="http://81.68.101.184/me/index.php/2021/10/" class="mdui-list-item mdui-ripple"
+                        mdui-drawer-close="" data-pjax-state="">
+                        <div class="mdui-list-item-content">2021 年 10 月</div>
+                        <div class="drawer-item">4</div>
+                    </a><a href="http://81.68.101.184/me/index.php/2021/09/" class="mdui-list-item mdui-ripple"
+                        mdui-drawer-close="" data-pjax-state="">
+                        <div class="mdui-list-item-content">2021 年 09 月</div>
+                        <div class="drawer-item">6</div>
+                    </a><a href="http://81.68.101.184/me/index.php/2021/08/" class="mdui-list-item mdui-ripple"
+                        mdui-drawer-close="" data-pjax-state="">
+                        <div class="mdui-list-item-content">2021 年 08 月</div>
+                        <div class="drawer-item">3</div>
+                    </a><a href="http://81.68.101.184/me/index.php/2021/07/" class="mdui-list-item mdui-ripple"
+                        mdui-drawer-close="" data-pjax-state="">
+                        <div class="mdui-list-item-content">2021 年 07 月</div>
+                        <div class="drawer-item">3</div>
+                    </a><a href="http://81.68.101.184/me/index.php/2021/06/" class="mdui-list-item mdui-ripple"
+                        mdui-drawer-close="" data-pjax-state="">
+                        <div class="mdui-list-item-content">2021 年 06 月</div>
+                        <div class="drawer-item">2</div>
+                    </a><a href="http://81.68.101.184/me/index.php/2021/05/" class="mdui-list-item mdui-ripple"
+                        mdui-drawer-close="" data-pjax-state="">
+                        <div class="mdui-list-item-content">2021 年 05 月</div>
+                        <div class="drawer-item">3</div>
+                    </a><a href="http://81.68.101.184/me/index.php/2021/04/" class="mdui-list-item mdui-ripple"
+                        mdui-drawer-close="" data-pjax-state="">
+                        <div class="mdui-list-item-content">2021 年 04 月</div>
+                        <div class="drawer-item">3</div>
+                    </a><a href="http://81.68.101.184/me/index.php/2021/03/" class="mdui-list-item mdui-ripple"
+                        mdui-drawer-close="" data-pjax-state="">
+                        <div class="mdui-list-item-content">2021 年 03 月</div>
+                        <div class="drawer-item">5</div>
+                    </a><a href="http://81.68.101.184/me/index.php/2021/02/" class="mdui-list-item mdui-ripple"
+                        mdui-drawer-close="" data-pjax-state="">
+                        <div class="mdui-list-item-content">2021 年 02 月</div>
+                        <div class="drawer-item">2</div>
+                    </a><a href="http://81.68.101.184/me/index.php/2021/01/" class="mdui-list-item mdui-ripple"
+                        mdui-drawer-close="" data-pjax-state="">
+                        <div class="mdui-list-item-content">2021 年 01 月</div>
+                        <div class="drawer-item">3</div>
+                    </a><a href="http://81.68.101.184/me/index.php/2020/12/" class="mdui-list-item mdui-ripple"
+                        mdui-drawer-close="" data-pjax-state="">
+                        <div class="mdui-list-item-content">2020 年 12 月</div>
+                        <div class="drawer-item">3</div>
+                    </a></ul>
+            </li>
+            <div class="mdui-divider"></div><a
+                class="mdui-list-item mdui-ripple" mdui-drawer-close="" data-pjax-state="">
+                <i class="mdui-icon material-icons mdui-list-item-icon">chat</i>
+                <div class="mdui-list-item-content">留言板</div>
+            </a><a class="mdui-list-item mdui-ripple"
+                mdui-drawer-close="" data-pjax-state="">
+                <i class="mdui-icon material-icons mdui-list-item-icon">view_carousel</i>
+                <div class="mdui-list-item-content">番剧</div>
+            </a><a class="mdui-list-item mdui-ripple"
+                mdui-drawer-close="" data-pjax-state="">
+                <i class="mdui-icon material-icons mdui-list-item-icon">links</i>
+                <div class="mdui-list-item-content">友人帐</div>
+            </a><a class="mdui-list-item mdui-ripple"
+                mdui-drawer-close="" data-pjax-state="">
+                <i class="mdui-icon material-icons mdui-list-item-icon">sort</i>
+                <div class="mdui-list-item-content">我们仨</div>
+            </a>
+        </ul>
+    </div>
+    <div class="index-container">
+        <div class="mdui-col-md-8">
+            <div class="mdui-card post-card">
+                <div class="mdui-card-media post-card-media">
+                    <div class="index-img entered loaded" data-bg="https://api.9jojo.cn/acgpic/?rand=842"
+                        data-ll-status="loaded"
+                        style="background-image: url(&quot;https://api.9jojo.cn/acgpic/?rand=842&quot;);"></div>
+                    <div class="mdui-card-media-covered">
+                        <div class="mdui-card-primary">
+                            <div class="mdui-card-primary-title"></div>
+                            <div class="mdui-card-primary-subtitle"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="error">
+                    
+                </div>
+                <div class="post-content mdui-typo"></div>
+                <!-- <div class="post-content mdui-typo">
+                    <p>  关于分页，从大一到现在，除了用的layui，基本没写出来带省略号的分页，这次就准备花一晚上来搞一下它，准备写的时候感觉它好高大上，应该会很难写，但是，写的时候才发现，也挺简单。<br>html:
+                    </p>
+                    <pre><code class="hljs cs">&lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"pageContainer"</span>&gt;
+          &lt;button <span class="hljs-keyword">class</span>=<span class="hljs-string">"left"</span>&gt;&amp;lt;&amp;lt;&lt;/button&gt;
+          &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"pageVessels"</span>&gt;
+              &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"page"</span>&gt;&lt;/div&gt;
+              &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"page"</span>&gt;&lt;/div&gt;
+              &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"page"</span>&gt;&lt;/div&gt;
+              &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"page"</span>&gt;&lt;/div&gt;
+              &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"page"</span>&gt;&lt;/div&gt;
+              &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"page"</span>&gt;&lt;/div&gt;
+              &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"page"</span>&gt;&lt;/div&gt;
+              &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"page"</span>&gt;&lt;/div&gt;
+              &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"page"</span>&gt;&lt;/div&gt;
+              &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"page"</span>&gt;&lt;/div&gt;
+          &lt;/div&gt;
+          &lt;button <span class="hljs-keyword">class</span>=<span class="hljs-string">"right"</span>&gt;&amp;gt;&amp;gt;&lt;/button&gt;
+      &lt;/div&gt;</code></pre>
+                    <p>css:</p>
+                    <pre><code class="hljs css">    * {
+    <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">box-sizing</span>: border-box;
+  }
+  <span class="hljs-selector-class">.w</span> {
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">1000px</span>;
+    <span class="hljs-attribute">min-width</span>: <span class="hljs-number">1000px</span>;
+    <span class="hljs-attribute">max-width</span>: <span class="hljs-number">1100px</span>;
+    <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> auto;
+  }
+  <span class="hljs-selector-class">.pageContainer</span> {
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">50px</span>;
+    <span class="hljs-attribute">background-color</span>: skyblue;
+  }
+  <span class="hljs-selector-class">.pageContainer</span> <span class="hljs-selector-class">.left</span> {
+    <span class="hljs-attribute">display</span>: block;
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">60px</span>;
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">30px</span>;
+    <span class="hljs-attribute">float</span>: left;
+  }
+  <span class="hljs-selector-class">.pageContainer</span> <span class="hljs-selector-class">.right</span> {
+    <span class="hljs-attribute">display</span>: block;
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">60px</span>;
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">30px</span>;
+    <span class="hljs-attribute">float</span>: left;
+  }
+  <span class="hljs-selector-class">.pageContainer</span> <span class="hljs-selector-class">.pageVessels</span> {
+    <span class="hljs-attribute">overflow</span>: hidden;
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">30px</span>;
+    <span class="hljs-attribute">cursor</span>: pointer;
+    <span class="hljs-attribute">float</span>: left;
+  }
+  <span class="hljs-selector-class">.pageContainer</span> <span class="hljs-selector-class">.pageVessels</span> <span class="hljs-selector-class">.page</span> {
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">60px</span>;
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">30px</span>;
+    <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid <span class="hljs-number">#f5f5f5</span>;
+    <span class="hljs-attribute">text-align</span>: center;
+    <span class="hljs-attribute">line-height</span>: <span class="hljs-number">30px</span>;
+    <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> <span class="hljs-number">10px</span>;
+    <span class="hljs-attribute">float</span>: left;
+    <span class="hljs-attribute">box-sizing</span>: border-box;
+    <span class="hljs-attribute">transition</span>: all <span class="hljs-number">0.3s</span>;
+  }
+  <span class="hljs-selector-class">.pageContainer</span> <span class="hljs-selector-class">.pageVessels</span> <span class="hljs-selector-class">.page</span><span class="hljs-selector-pseudo">:hover</span> {
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#d6555f</span>;
+    <span class="hljs-attribute">color</span>: <span class="hljs-number">#ffffff</span>;
+    <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid <span class="hljs-number">#d6555f</span> <span class="hljs-meta">!important</span>;
+  }
+  <span class="hljs-selector-class">.backColor</span> {
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#d6555f</span>;
+    <span class="hljs-attribute">color</span>: <span class="hljs-number">#ffffff</span>;
+    <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid <span class="hljs-number">#d6555f</span> <span class="hljs-meta">!important</span>;
+  }
+  <span class="hljs-selector-class">.none</span> {
+    <span class="hljs-attribute">display</span>: none <span class="hljs-meta">!important</span>;
+  }</code></pre>
+                    <p>js:</p>
+                    <pre><code class="hljs javascript"><span class="hljs-keyword">let</span> left=<span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">'.left'</span>)
+  <span class="hljs-keyword">let</span> right=<span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">'.right'</span>)
+  <span class="hljs-keyword">let</span> page=<span class="hljs-built_in">document</span>.querySelectorAll(<span class="hljs-string">'.page'</span>)
+  <span class="hljs-keyword">let</span> key=<span class="hljs-number">1</span>
+  <span class="hljs-keyword">let</span> btnNumber=<span class="hljs-number">10</span>
+  <span class="hljs-comment">//生成按钮</span>
+  <span class="hljs-keyword">let</span> Btn=<span class="hljs-function">(<span class="hljs-params">i,h,btnNumber</span>)=&gt;</span>{
+      <span class="hljs-comment">//判断左右按钮是否显示</span>
+      <span class="hljs-keyword">if</span>(h==<span class="hljs-number">1</span>)left.classList.add(<span class="hljs-string">'none'</span>)
+      <span class="hljs-keyword">else</span> left.classList.remove(<span class="hljs-string">'none'</span>)
+  
+      <span class="hljs-keyword">if</span>(h==i)right.classList.add(<span class="hljs-string">'none'</span>)
+      <span class="hljs-keyword">else</span> right.classList.remove(<span class="hljs-string">'none'</span>)
+      <span class="hljs-comment">//判断如果按钮数小于10</span>
+      <span class="hljs-keyword">if</span>(i&lt;=btnNumber){
+          <span class="hljs-keyword">for</span>(<span class="hljs-keyword">let</span> j=<span class="hljs-number">1</span>;j&lt;=i;j++){
+              <span class="hljs-keyword">if</span>(h==j){
+                  page[j<span class="hljs-number">-1</span>].innerHTML=j
+                  page[j<span class="hljs-number">-1</span>].classList.add(<span class="hljs-string">"backColor"</span>)
+              }<span class="hljs-keyword">else</span>{
+                  page[j<span class="hljs-number">-1</span>].innerHTML=j
+                  page[j<span class="hljs-number">-1</span>].classList.remove(<span class="hljs-string">"backColor"</span>)
+              }
+          }
+      }
+      <span class="hljs-comment">//判断按钮数如果大于10，且小于6</span>
+      <span class="hljs-keyword">if</span>(i&gt;<span class="hljs-number">10</span>&amp;&amp;h&lt;<span class="hljs-number">6</span>){
+          <span class="hljs-keyword">for</span>(<span class="hljs-keyword">let</span> j=<span class="hljs-number">1</span>;j&lt;=btnNumber;j++){
+              <span class="hljs-keyword">if</span>(j==h){
+                  page[j<span class="hljs-number">-1</span>].innerHTML=j==btnNumber<span class="hljs-number">-1</span>?<span class="hljs-string">"..."</span>:j&amp;&amp;j==btnNumber?i:j
+                  page[j<span class="hljs-number">-1</span>].classList.add(<span class="hljs-string">"backColor"</span>)
+              }<span class="hljs-keyword">else</span>{
+                  page[j<span class="hljs-number">-1</span>].innerHTML=j==btnNumber<span class="hljs-number">-1</span>?<span class="hljs-string">"..."</span>:j&amp;&amp;j==btnNumber?i:j
+                  page[j<span class="hljs-number">-1</span>].classList.remove(<span class="hljs-string">"backColor"</span>)
+              }
+          }
+      }
+      <span class="hljs-comment">//判断按钮数如果大于10，且大于6，且小于最大值-6</span>
+      <span class="hljs-keyword">if</span>(i&gt;btnNumber&amp;&amp;h&gt;=<span class="hljs-number">6</span>&amp;&amp;h&lt;i<span class="hljs-number">-4</span>){
+          <span class="hljs-keyword">for</span>(<span class="hljs-keyword">let</span> j=<span class="hljs-number">1</span>;j&lt;=btnNumber;j++){
+              <span class="hljs-keyword">if</span>(h-(<span class="hljs-number">5</span>-j)==h){
+                  page[j<span class="hljs-number">-1</span>].innerHTML=(j==<span class="hljs-number">2</span>||j==btnNumber<span class="hljs-number">-1</span>)?<span class="hljs-string">"..."</span>:h-(<span class="hljs-number">5</span>-j)&amp;&amp;j==btnNumber?i:h-(<span class="hljs-number">5</span>-j)&amp;&amp;j==<span class="hljs-number">1</span>?<span class="hljs-number">1</span>:h-(<span class="hljs-number">5</span>-j)
+                  page[j<span class="hljs-number">-1</span>].classList.add(<span class="hljs-string">"backColor"</span>)
+              }<span class="hljs-keyword">else</span>{
+                  page[j<span class="hljs-number">-1</span>].innerHTML=(j==<span class="hljs-number">2</span>||j==btnNumber<span class="hljs-number">-1</span>)?<span class="hljs-string">"..."</span>:h-(<span class="hljs-number">5</span>-j)&amp;&amp;j==btnNumber?i:h-(<span class="hljs-number">5</span>-j)&amp;&amp;j==<span class="hljs-number">1</span>?<span class="hljs-number">1</span>:h-(<span class="hljs-number">5</span>-j)
+                  page[j<span class="hljs-number">-1</span>].classList.remove(<span class="hljs-string">"backColor"</span>)
+              }
+          }
+      }
+      <span class="hljs-keyword">if</span>(i&gt;btnNumber&amp;&amp;h&gt;=<span class="hljs-number">6</span>&amp;&amp;h&gt;=i<span class="hljs-number">-4</span>){
+          <span class="hljs-keyword">for</span>(<span class="hljs-keyword">let</span> j=<span class="hljs-number">1</span>;j&lt;=btnNumber;j++){
+              <span class="hljs-keyword">if</span>(i-(<span class="hljs-number">10</span>-j)==h){
+                  page[j<span class="hljs-number">-1</span>].innerHTML=(j==<span class="hljs-number">2</span>?<span class="hljs-string">"..."</span>:i-(btnNumber-j)&amp;&amp;j==<span class="hljs-number">1</span>?<span class="hljs-number">1</span>:i-(btnNumber-j))
+                  page[j<span class="hljs-number">-1</span>].classList.add(<span class="hljs-string">"backColor"</span>)
+              }<span class="hljs-keyword">else</span>{
+                  page[j<span class="hljs-number">-1</span>].innerHTML=(j==<span class="hljs-number">2</span>?<span class="hljs-string">"..."</span>:i-(btnNumber-j)&amp;&amp;j==<span class="hljs-number">1</span>?<span class="hljs-number">1</span>:i-(btnNumber-j))
+                  page[j<span class="hljs-number">-1</span>].classList.remove(<span class="hljs-string">"backColor"</span>)
+              }
+          }
+      }
+  }
+  <span class="hljs-keyword">let</span> ans=<span class="hljs-number">30</span><span class="hljs-comment">//一共多少页</span>
+  Btn(ans,key,btnNumber)<span class="hljs-comment">//默认第一页</span>
+  <span class="hljs-keyword">for</span>(<span class="hljs-keyword">let</span> i=<span class="hljs-number">0</span>,len=<span class="hljs-number">10</span>;i&lt;len;i++){
+      page[i].addEventListener(<span class="hljs-string">'click'</span>,<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+          <span class="hljs-keyword">if</span>(page[i].innerHTML!=<span class="hljs-string">'...'</span>){
+              key=page[i].innerHTML
+              Btn(ans,key,btnNumber)
+          }
+      })
+  }
+  
+  <span class="hljs-comment">//左</span>
+  left.addEventListener(<span class="hljs-string">'click'</span>,<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+      key--
+      Btn(ans,key,btnNumber)
+  })
+  <span class="hljs-comment">//右</span>
+  right.addEventListener(<span class="hljs-string">'click'</span>,<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+      key++
+      Btn(ans,key,btnNumber)
+  })</code></pre>
+                    <p>效果是写出来了，还有优化的地方都后续再说吧。</p>
+                </div> -->
+            </div>
+            <div class="mdui-dialog emoji-dialog" id="emoji">
+                <div class="emoji-box">
+                    <div class="emoji-top mdui-dialog-title">
+                        Emoji
+                        <div class="emoji-cancel">
+                            <button class="mdui-btn mdui-btn-icon" mdui-dialog-close="" no-pjax=""><i
+                                    class="mdui-icon material-icons">cancel</i></button>
+                        </div>
+                    </div>
+                    <div class="mdui-divider"></div>
+                    <div class="mdui-dialog-body mdui-dialog-content">
+                        <div id="owo" class="mdui-p-a-2"><a no-go=""
+                                href="javascript:Smilies.grin(&#39;OωO&#39;);"><span
+                                    class="emoji-text mdui-btn mdui-card mdui-shadow-2">OωO</span></a><a no-go=""
+                                href="javascript:Smilies.grin(&#39;ヾ(≧∇≦*)ゝ&#39;);"><span
+                                    class="emoji-text mdui-btn mdui-card mdui-shadow-2">ヾ(≧∇≦*)ゝ</span></a><a no-go=""
+                                href="javascript:Smilies.grin(&#39;|´・ω・)ノ&#39;);"><span
+                                    class="emoji-text mdui-btn mdui-card mdui-shadow-2">|´・ω・)ノ</span></a><a no-go=""
+                                href="javascript:Smilies.grin(&#39;(☆ω☆)&#39;);"><span
+                                    class="emoji-text mdui-btn mdui-card mdui-shadow-2">(☆ω☆)</span></a><a no-go=""
+                                href="javascript:Smilies.grin(&#39;（╯‵□′）╯︵┴─┴&#39;);"><span
+                                    class="emoji-text mdui-btn mdui-card mdui-shadow-2">（╯‵□′）╯︵┴─┴</span></a><a
+                                no-go="" href="javascript:Smilies.grin(&#39;￣﹃￣&#39;);"><span
+                                    class="emoji-text mdui-btn mdui-card mdui-shadow-2">￣﹃￣</span></a><a no-go=""
+                                href="javascript:Smilies.grin(&#39;∠( ᐛ 」∠)＿&#39;);"><span
+                                    class="emoji-text mdui-btn mdui-card mdui-shadow-2">∠( ᐛ 」∠)＿</span></a><a no-go=""
+                                href="javascript:Smilies.grin(&#39;(/ω＼)&#39;);"><span
+                                    class="emoji-text mdui-btn mdui-card mdui-shadow-2">(/ω＼)</span></a><a no-go=""
+                                href="javascript:Smilies.grin(&#39;(๑•̀ㅁ•́ฅ)&#39;);"><span
+                                    class="emoji-text mdui-btn mdui-card mdui-shadow-2">(๑•̀ㅁ•́ฅ)</span></a><a no-go=""
+                                href="javascript:Smilies.grin(&#39;୧(๑•̀⌄•́๑)૭&#39;);"><span
+                                    class="emoji-text mdui-btn mdui-card mdui-shadow-2">୧(๑•̀⌄•́๑)૭</span></a><a
+                                no-go="" href="javascript:Smilies.grin(&#39;٩(ˊᗜˋ*)و&#39;);"><span
+                                    class="emoji-text mdui-btn mdui-card mdui-shadow-2">٩(ˊᗜˋ*)و</span></a><a no-go=""
+                                href="javascript:Smilies.grin(&#39;→_→&#39;);"><span
+                                    class="emoji-text mdui-btn mdui-card mdui-shadow-2">→_→</span></a><a no-go=""
+                                href="javascript:Smilies.grin(&#39;(ノ°ο°)ノ&#39;);"><span
+                                    class="emoji-text mdui-btn mdui-card mdui-shadow-2">(ノ°ο°)ノ</span></a><a no-go=""
+                                href="javascript:Smilies.grin(&#39;(´இ皿இ｀)&#39;);"><span
+                                    class="emoji-text mdui-btn mdui-card mdui-shadow-2">(´இ皿இ｀)</span></a><a no-go=""
+                                href="javascript:Smilies.grin(&#39;⌇●﹏●⌇&#39;);"><span
+                                    class="emoji-text mdui-btn mdui-card mdui-shadow-2">⌇●﹏●⌇</span></a><a no-go=""
+                                href="javascript:Smilies.grin(&#39;(ฅ´ω`ฅ)&#39;);"><span
+                                    class="emoji-text mdui-btn mdui-card mdui-shadow-2">(ฅ´ω`ฅ)</span></a><a no-go=""
+                                href="javascript:Smilies.grin(&#39;(╯°A°)╯︵○○○&#39;);"><span
+                                    class="emoji-text mdui-btn mdui-card mdui-shadow-2">(╯°A°)╯︵○○○</span></a><a
+                                no-go="" href="javascript:Smilies.grin(&#39;φ(￣∇￣o)&#39;);"><span
+                                    class="emoji-text mdui-btn mdui-card mdui-shadow-2">φ(￣∇￣o)</span></a><a no-go=""
+                                href="javascript:Smilies.grin(&#39;ヾ(´･ ･｀｡)ノ\&quot;&#39;);"><span
+                                    class="emoji-text mdui-btn mdui-card mdui-shadow-2">ヾ(´･ ･｀｡)ノ\"</span></a><a
+                                no-go="" href="javascript:Smilies.grin(&#39;( ง ᵒ̌皿ᵒ̌)ง⁼³₌₃&#39;);"><span
+                                    class="emoji-text mdui-btn mdui-card mdui-shadow-2">( ง ᵒ̌皿ᵒ̌)ง⁼³₌₃</span></a><a
+                                no-go="" href="javascript:Smilies.grin(&#39;(ó﹏ò｡)&#39;);"><span
+                                    class="emoji-text mdui-btn mdui-card mdui-shadow-2">(ó﹏ò｡)</span></a><a no-go=""
+                                href="javascript:Smilies.grin(&#39;Σ(っ °Д °;)っ&#39;);"><span
+                                    class="emoji-text mdui-btn mdui-card mdui-shadow-2">Σ(っ °Д °;)っ</span></a><a
+                                no-go="" href="javascript:Smilies.grin(&#39;( ,,´･ω･)ﾉ\&quot;(´っω･｀｡)&#39;);"><span
+                                    class="emoji-text mdui-btn mdui-card mdui-shadow-2">(
+                                    ,,´･ω･)ﾉ\"(´っω･｀｡)</span></a><a no-go=""
+                                href="javascript:Smilies.grin(&#39;╮(╯▽╰)╭&#39;);"><span
+                                    class="emoji-text mdui-btn mdui-card mdui-shadow-2">╮(╯▽╰)╭</span></a><a no-go=""
+                                href="javascript:Smilies.grin(&#39;o(*////▽////*)q&#39;);"><span
+                                    class="emoji-text mdui-btn mdui-card mdui-shadow-2">o(*////▽////*)q</span></a><a
+                                no-go="" href="javascript:Smilies.grin(&#39;( ๑´•ω•) \&quot;(ㆆᴗㆆ)&#39;);"><span
+                                    class="emoji-text mdui-btn mdui-card mdui-shadow-2">( ๑´•ω•) \"(ㆆᴗㆆ)</span></a><a
+                                no-go="" href="javascript:Smilies.grin(&#39;(｡•ˇ‸ˇ•｡)&#39;);"><span
+                                    class="emoji-text mdui-btn mdui-card mdui-shadow-2">(｡•ˇ‸ˇ•｡)</span></a></div>
+                        <div id="Emoji" class="mdui-p-a-2" style="display: none;"><a no-go=""
+                                href="javascript:Smilies.grin(&#39;😂&#39;);"><span
+                                    class="emoji-emoji mdui-btn mdui-card mdui-shadow-2">😂</span></a><a no-go=""
+                                href="javascript:Smilies.grin(&#39;😀&#39;);"><span
+                                    class="emoji-emoji mdui-btn mdui-card mdui-shadow-2">😀</span></a><a no-go=""
+                                href="javascript:Smilies.grin(&#39;😅&#39;);"><span
+                                    class="emoji-emoji mdui-btn mdui-card mdui-shadow-2">😅</span></a><a no-go=""
+                                href="javascript:Smilies.grin(&#39;😊&#39;);"><span
+                                    class="emoji-emoji mdui-btn mdui-card mdui-shadow-2">😊</span></a><a no-go=""
+                                href="javascript:Smilies.grin(&#39;🙂&#39;);"><span
+                                    class="emoji-emoji mdui-btn mdui-card mdui-shadow-2">🙂</span></a><a no-go=""
+                                href="javascript:Smilies.grin(&#39;🙃&#39;);"><span
+                                    class="emoji-emoji mdui-btn mdui-card mdui-shadow-2">🙃</span></a><a no-go=""
+                                href="javascript:Smilies.grin(&#39;😌&#39;);"><span
+                                    class="emoji-emoji mdui-btn mdui-card mdui-shadow-2">😌</span></a><a no-go=""
+                                href="javascript:Smilies.grin(&#39;😍&#39;);"><span
+                                    class="emoji-emoji mdui-btn mdui-card mdui-shadow-2">😍</span></a><a no-go=""
+                                href="javascript:Smilies.grin(&#39;😘&#39;);"><span
+                                    class="emoji-emoji mdui-btn mdui-card mdui-shadow-2">😘</span></a><a no-go=""
+                                href="javascript:Smilies.grin(&#39;😏&#39;);"><span
+                                    class="emoji-emoji mdui-btn mdui-card mdui-shadow-2">😏</span></a><a no-go=""
+                                href="javascript:Smilies.grin(&#39;😒&#39;);"><span
+                                    class="emoji-emoji mdui-btn mdui-card mdui-shadow-2">😒</span></a><a no-go=""
+                                href="javascript:Smilies.grin(&#39;🙄&#39;);"><span
+                                    class="emoji-emoji mdui-btn mdui-card mdui-shadow-2">🙄</span></a><a no-go=""
+                                href="javascript:Smilies.grin(&#39;😳&#39;);"><span
+                                    class="emoji-emoji mdui-btn mdui-card mdui-shadow-2">😳</span></a><a no-go=""
+                                href="javascript:Smilies.grin(&#39;😡&#39;);"><span
+                                    class="emoji-emoji mdui-btn mdui-card mdui-shadow-2">😡</span></a><a no-go=""
+                                href="javascript:Smilies.grin(&#39;😔&#39;);"><span
+                                    class="emoji-emoji mdui-btn mdui-card mdui-shadow-2">😔</span></a><a no-go=""
+                                href="javascript:Smilies.grin(&#39;😫&#39;);"><span
+                                    class="emoji-emoji mdui-btn mdui-card mdui-shadow-2">😫</span></a><a no-go=""
+                                href="javascript:Smilies.grin(&#39;😱&#39;);"><span
+                                    class="emoji-emoji mdui-btn mdui-card mdui-shadow-2">😱</span></a><a no-go=""
+                                href="javascript:Smilies.grin(&#39;😕&#39;);"><span
+                                    class="emoji-emoji mdui-btn mdui-card mdui-shadow-2">😕</span></a><a no-go=""
+                                href="javascript:Smilies.grin(&#39;🧐&#39;);"><span
+                                    class="emoji-emoji mdui-btn mdui-card mdui-shadow-2">🧐</span></a><a no-go=""
+                                href="javascript:Smilies.grin(&#39;🤭&#39;);"><span
+                                    class="emoji-emoji mdui-btn mdui-card mdui-shadow-2">🤭</span></a><a no-go=""
+                                href="javascript:Smilies.grin(&#39;🤐&#39;);"><span
+                                    class="emoji-emoji mdui-btn mdui-card mdui-shadow-2">🤐</span></a><a no-go=""
+                                href="javascript:Smilies.grin(&#39;💩&#39;);"><span
+                                    class="emoji-emoji mdui-btn mdui-card mdui-shadow-2">💩</span></a><a no-go=""
+                                href="javascript:Smilies.grin(&#39;👻&#39;);"><span
+                                    class="emoji-emoji mdui-btn mdui-card mdui-shadow-2">👻</span></a><a no-go=""
+                                href="javascript:Smilies.grin(&#39;🙌&#39;);"><span
+                                    class="emoji-emoji mdui-btn mdui-card mdui-shadow-2">🙌</span></a><a no-go=""
+                                href="javascript:Smilies.grin(&#39;🖕&#39;);"><span
+                                    class="emoji-emoji mdui-btn mdui-card mdui-shadow-2">🖕</span></a><a no-go=""
+                                href="javascript:Smilies.grin(&#39;👍&#39;);"><span
+                                    class="emoji-emoji mdui-btn mdui-card mdui-shadow-2">👍</span></a><a no-go=""
+                                href="javascript:Smilies.grin(&#39;🌝&#39;);"><span
+                                    class="emoji-emoji mdui-btn mdui-card mdui-shadow-2">🌝</span></a><a no-go=""
+                                href="javascript:Smilies.grin(&#39;🌚&#39;);"><span
+                                    class="emoji-emoji mdui-btn mdui-card mdui-shadow-2">🌚</span></a><a no-go=""
+                                href="javascript:Smilies.grin(&#39;😶&#39;);"><span
+                                    class="emoji-emoji mdui-btn mdui-card mdui-shadow-2">😶</span></a><a no-go=""
+                                href="javascript:Smilies.grin(&#39;🙏&#39;);"><span
+                                    class="emoji-emoji mdui-btn mdui-card mdui-shadow-2">🙏</span></a><a no-go=""
+                                href="javascript:Smilies.grin(&#39;😣&#39;);"><span
+                                    class="emoji-emoji mdui-btn mdui-card mdui-shadow-2">😣</span></a><a no-go=""
+                                href="javascript:Smilies.grin(&#39;💊&#39;);"><span
+                                    class="emoji-emoji mdui-btn mdui-card mdui-shadow-2">💊</span></a><a no-go=""
+                                href="javascript:Smilies.grin(&#39;🍉&#39;);"><span
+                                    class="emoji-emoji mdui-btn mdui-card mdui-shadow-2">🍉</span></a><a no-go=""
+                                href="javascript:Smilies.grin(&#39;🎈&#39;);"><span
+                                    class="emoji-emoji mdui-btn mdui-card mdui-shadow-2">🎈</span></a><a no-go=""
+                                href="javascript:Smilies.grin(&#39;🎁&#39;);"><span
+                                    class="emoji-emoji mdui-btn mdui-card mdui-shadow-2">🎁</span></a></div>
+                        <div id="qwq" class="mdui-p-a-2" style="display: none;"><a no-go=""
+                                href="javascript:Smilies.grin(&#39;:qwq1:&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/qwq1.png"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;:qwq2:&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/qwq2.png"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;:qwq3:&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/qwq3.png"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;:qwq4:&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/qwq4.png"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;:qwq5:&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/qwq5.png"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;:qwq6:&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/qwq6.png"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;:qwq7:&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/qwq7.png"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;:qwq8:&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/qwq8.png"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;:qwq9:&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/qwq9.png"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;:qwq10:&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/qwq10.png"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;:qwq11:&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/qwq11.png"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;:qwq12:&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/qwq12.png"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;:qwq13:&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/qwq13.png"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;:qwq14:&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/qwq14.png"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;:qwq15:&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/qwq15.png"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;:qwq16:&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/qwq16.png"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;:qwq17:&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/qwq17.png"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;:qwq18:&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/qwq18.png"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;:qwq19:&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/qwq19.png"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;:qwq20:&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/qwq20.png"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;:qwq21:&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/qwq21.png"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;:qwq22:&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/qwq22.png"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;:qwq23:&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/qwq23.png"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;:qwq24:&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/qwq24.png"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;:qwq25:&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/qwq25.png"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;:qwq26:&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/qwq26.png"></div>
+                            </a></div>
+                        <div id="tieba" class="mdui-p-a-2" style="display: none;"><a no-go=""
+                                href="javascript:Smilies.grin(&#39;::(啊)&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img src="../img/a.png">
+                                </div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;::(鄙视)&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/bishi.png"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;::(不高兴)&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/bugaoxing.png"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;::(乖)&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/guai.png"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;::(哈哈)&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/haha.png"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;::(汗)&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/han.png"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;::(呵呵)&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/hehe.png"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;::(黑线)&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/heixian.png"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;::(滑稽)&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/huaji.png"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;::(花心)&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/huaxin.png"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;::(惊哭)&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/jingku.png"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;::(惊讶)&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/jingya.png"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;::(懒得理)&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/landeli.png"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;::(泪)&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/lei.png"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;::(勉强)&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/mianqiang.png"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;::(你懂的)&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/nidongde.png"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;::(喷)&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/pen.png"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;::(睡觉)&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/shuijiao.png"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;::(酸爽)&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/suanshuang.png"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;::(太开心)&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/taikaixin.png"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;::(吐舌)&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/tushe.png"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;::(挖鼻)&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/wabi.png"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;::(委屈)&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/weiqu.png"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;::(what)&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/what.png"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;::(捂嘴笑)&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/wuzuixiao.png"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;::(小乖)&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/xiaoguai.png"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;::(小红脸)&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/xiaohonglian.png"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;::(笑眼)&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/xiaoyan.png"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;::(犀利)&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/xili.png"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;::(不要啊)&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/yamaidei.png"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;::(阴险)&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/yinxian.png"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;::(疑问)&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/yiwen.png"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;::(真棒)&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/zhenbang.png"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;::(爱心)&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/aixin.png"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;::(心碎)&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/xinsui.png"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;::(💩)&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/bianbian.png"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;::(彩虹)&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/caihong.png"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;::(大拇指)&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/damuzhi.png"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;::(蛋糕)&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/dangao.png"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;::(灯泡)&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/dengpao.png"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;::(红领巾)&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/honglingjin.png"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;::(蜡烛)&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/lazhu.png"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;::(礼物)&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/liwu.png"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;::(玫瑰)&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/meigui.png"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;::(OK)&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/OK.png"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;::(沙发)&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/shafa.png"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;::(手指)&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/shouzhi.png"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;::(太阳)&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/taiyang.png"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;::(星星月亮)&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/xingxingyueliang.png"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;::(药丸)&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/yaowan.png"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;::(音乐)&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/yinyue.png"></div>
+                            </a></div>
+                        <div id="huaji" class="mdui-p-a-2" style="display: none;"><a no-go=""
+                                href="javascript:Smilies.grin(&#39;:huaji1:&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/huaji1.gif"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;:huaji2:&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/huaji2.jpg"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;:huaji3:&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/huaji3.jpg"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;:huaji4:&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/huaji4.jpg"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;:huaji5:&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/huaji5.jpg"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;:huaji6:&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/huaji6.jpg"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;:huaji7:&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/huaji7.jpg"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;:huaji8:&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/huaji8.jpg"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;:huaji9:&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/huaji9.jpg"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;:huaji10:&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/huaji10.gif"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;:huaji1:&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/huaji11.jpg"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;:huaji12:&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/huaji12.gif"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;:huaji13:&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/huaji13.jpg"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;:huaji14:&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/huaji14.jpg"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;:huaji15:&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/huaji15.png"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;:huaji16:&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/huaji16.gif"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;:huaji17:&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/huaji17.gif"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;:huaji18:&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/huaji18.png"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;:huaji19:&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/huaji19.gif"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;:huaji20:&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/huaji20.jpg"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;:huaji21:&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/huaji21.jpg"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;:huaji22:&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/huaji22.jpg"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;:huaji23:&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/huaji23.jpg"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;:huaji24:&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/huaji24.jpg"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;:huaji25:&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/huaji25.jpg"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;:huaji26:&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/huaji26.jpg"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;:huaji27:&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/huaji27.jpg"></div>
+                            </a></div>
+                        <div id="meow" class="mdui-p-a-2" style="display: none;"><a no-go=""
+                                href="javascript:Smilies.grin(&#39;:&amp;(无语)&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/DuskPiperMeow1.jpeg"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;:&amp;(233)&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/DuskPiperMeow2.jpeg"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;:&amp;(Hi)&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/DuskPiperMeow3.jpeg"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;:&amp;(给个眼神自己体会)&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/DuskPiperMeow4.jpeg"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;:&amp;(你这个逼装的太好了)&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/DuskPiperMeow5.jpeg"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;:&amp;(假装没看见)&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/DuskPiperMeow6.jpeg"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;:&amp;(流口水)&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/DuskPiperMeow7.jpeg"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;:&amp;(盯)&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/DuskPiperMeow8.jpeg"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;:&amp;(逗比看剑)&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/DuskPiperMeow9.jpeg"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;:&amp;(BOOM)&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/DuskPiperMeow10.jpeg"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;:&amp;(猫猫落泪)&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/DuskPiperMeow11.jpeg"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;:&amp;(躲墙角)&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/DuskPiperMeow12.jpeg"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;:&amp;(嗯？)&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/DuskPiperMeow13.jpeg"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;:&amp;(你知道的太多了)&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/DuskPiperMeow14.jpeg"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;:&amp;(问号)&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/DuskPiperMeow15.jpeg"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;:&amp;(热的脸红)&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/DuskPiperMeow16.jpeg"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;:&amp;(在下输了)&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/DuskPiperMeow17.jpeg"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;:&amp;(舔猫猫)&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/DuskPiperMeow18.jpeg"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;:&amp;(猫猫の凝视)&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/DuskPiperMeow19.jpeg"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;:&amp;(报警)&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/DuskPiperMeow20.jpeg"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;:&amp;(发抖)&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/DuskPiperMeow21.jpeg"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;:&amp;(吓黑了)&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/DuskPiperMeow22.jpeg"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;:&amp;(该学习了)&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/DuskPiperMeow23.jpeg"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;:&amp;(药不能停)&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/DuskPiperMeow24.jpeg"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;:&amp;(丢炸弹)&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/DuskPiperMeow25.jpeg"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;:&amp;(太可怕了)&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/DuskPiperMeow26.jpeg"></div>
+                            </a><a no-go="" href="javascript:Smilies.grin(&#39;:&amp;(惊了)&#39;);">
+                                <div class="emoji-bq mdui-card mdui-btn"><img
+                                        src="../img/DuskPiperMeow27.jpeg"></div>
+                            </a></div>
+                    </div>
+                    <div class="mdui-tab mdui-tab-full-width" mdui-tab="">
+                        <a href="http://81.68.101.184/me/index.php/archives/47/#owo" class="mdui-ripple mdui-tab-active"
+                            no-pgo="">owo</a><a href="http://81.68.101.184/me/index.php/archives/47/#Emoji"
+                            class="mdui-ripple" no-pgo="">Emoji</a><a
+                            href="http://81.68.101.184/me/index.php/archives/47/#qwq" class="mdui-ripple"
+                            no-pgo="">qwq</a><a href="http://81.68.101.184/me/index.php/archives/47/#tieba"
+                            class="mdui-ripple" no-pgo="">tieba</a><a
+                            href="http://81.68.101.184/me/index.php/archives/47/#huaji" class="mdui-ripple"
+                            no-pgo="">huaji</a><a href="http://81.68.101.184/me/index.php/archives/47/#meow"
+                            class="mdui-ripple" no-pgo="">meow</a>
+                        <div class="mdui-tab-indicator" style="left: 0px;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="comment-header">
+                <div class="comment-button">
+                    <button id="sendComment-title-owo-button" class="mdui-btn mdui-btn-icon"
+                        mdui-dialog="{target: &#39;#emoji&#39;,history: false}"><i
+                            class="mdui-icon material-icons">insert_emoticon</i></button>
+                </div>
+                <div class="comment-title">发表评论</div>
+                <div class="comments-container">
+                    <div class="mdui-card post-card">
+                        <div class="mdui-card-content">
+                            <div class="comment-info">
+                                <p><i class="mdui-icon material-icons">info</i>暂时还不能评论哦</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div id="respond-post-47" class="mdui-card comment-respond"
+                data-commenturl="http://81.68.101.184/me/index.php/archives/47/comment">
+                <div class="mdui-card-content">
+                    <form id="comment-form"
+                        onkeydown="if(event.ctrlKey &amp;&amp; event.keyCode == 13){Comments.submit();return false;}">
+                        <textarea placeholder="大佬呐！看这里！这里留言鸭！" id="comment-textarea" class="comment-textarea"
+                            name="text" rows="8" cols="50" tabindex="4" required=""></textarea>
+                        <div>
+                            <div class="mdui-textfield mdui-col-md-6">
+                                <i class="mdui-icon material-icons">account_circle</i>
+                                <label class="mdui-textfield-label">昵称</label>
+                                <input class="mdui-textfield-input comment-input-author" type="text" name="author"
+                                    value="" required="">
+                            </div>
+                            <div class="mdui-textfield mdui-col-md-6">
+                                <i class="mdui-icon material-icons">email</i>
+                                <label class="mdui-textfield-label">邮箱</label>
+                                <input class="mdui-textfield-input comment-input-email" id="email" type="email"
+                                    name="mail" value="" required="">
+                            </div>
+                            <div>
+                                <div class="mdui-textfield comment-web">
+                                    <i class="mdui-icon material-icons">web</i>
+                                    <label class="mdui-textfield-label">网址(选填)</label>
+                                    <input class="mdui-textfield-input" type="url" name="url" placeholder="http://"
+                                        value="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment-form-button">
+                            <button id="sendComment-input-owo-button" type="button" class="mdui-btn mdui-btn-icon emoji"
+                                mdui-dialog="{target: &#39;#emoji&#39;, history: false}" style="display: none;"><i
+                                    class="mdui-icon material-icons">insert_emoticon</i></button>
+                            <a id="cancel-comment-reply-link"
+                                href="http://81.68.101.184/me/index.php/archives/47/#respond-post-47" rel="nofollow"
+                                style="display:none" onclick="return TypechoComment.cancelReply();"
+                                data-pjax-state=""><button id="sendComment-title-reply-button"
+                                    class="mdui-btn mdui-btn-icon"><i
+                                        class="mdui-icon material-icons">cancel</i></button></a> <button type="button"
+                                onclick="Comments.submit()" id="submit"
+                                class="mdui-btn mdui-text-color-theme mdui-ripple submit">发表评论</button>
+                        </div>
+                    </form>
+                </div>
+            </div> -->
+            <div class="comment-title">全部评论</div>
+            <div class="comments-container">
+                <div class="mdui-card post-card">
+                    <div class="mdui-card-content">
+                        <div class="comment-info">
+                            <p><i class="mdui-icon material-icons">info</i> 还没有任何评论，你来说两句呐!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mdui-col-md-4">
+            <div class="mdui-card mdui-hoverable sidebar-info">
+                <div class="sidebar-info-img">
+                    <div class="sidebar-info-bg"
+                        style="background-image: url(&#39;http://81.68.101.184/me/usr/themes/Cuckoo/assets/images/sidebar.jpg&#39;)">
+                    </div>
+                    <div class="mdui-img-circle mdui-shadow-3"
+                        style="background-image: url(&#39;http://81.68.101.184/me/usr/themes/Cuckoo/assets/images/me.jpg&#39;)">
+                    </div>
+                </div>
+                <div class="sidebar-info-body">
+                    <div class="sidebar-info-name">1514</div>
+                    <div class="sidebar-info-desc">如果有一个喜欢你的人出现，一定不要凶她哦！</div>
+                </div>
+            </div>
+            <!-- 回复 -->
+            <!-- <div class="mdui-card mdui-hoverable sidebar-module">
+                <ul class="mdui-list">
+                    <div class="sidebar-module-title">最新回复</div>
+                    <li class="mdui-divider mdui-m-y-0"></li>
+                    <a href="http://81.68.101.184/me/index.php/archives/1/#comment-7" data-pjax-state="">
+                        <li class="mdui-list-item mdui-ripple sidebar-module-list">
+                            <div class="sidebar-reply-text">俗人 : ( ๑´•ω•) "(ㆆᴗㆆ)</div>
+                        </li>
+                        <li class="mdui-divider"></li>
+                    </a>
+                    <a href="http://81.68.101.184/me/index.php/archives/1/#comment-6" data-pjax-state="">
+                        <li class="mdui-list-item mdui-ripple sidebar-module-list">
+                            <div class="sidebar-reply-text">嘿咻 : (´இ皿இ｀)</div>
+                        </li>
+                        <li class="mdui-divider"></li>
+                    </a>
+                    <a href="http://81.68.101.184/me/index.php/archives/1/#comment-5" data-pjax-state="">
+                        <li class="mdui-list-item mdui-ripple sidebar-module-list">
+                            <div class="sidebar-reply-text">莴苣菜 : 来了</div>
+                        </li>
+                        <li class="mdui-divider"></li>
+                    </a>
+                    <a href="http://81.68.101.184/me/index.php/archives/1/#comment-2" data-pjax-state="">
+                        <li class="mdui-list-item mdui-ripple sidebar-module-list">
+                            <div class="sidebar-reply-text">1514 : 感谢陪伴</div>
+                        </li>
+                        <li class="mdui-divider"></li>
+                    </a>
+                </ul>
+            </div> -->
+            <!-- <div class="mdui-card mdui-hoverable sidebar-module">
+                <ul class="mdui-list">
+                    <div class="sidebar-module-title">标签云</div>
+                    <li class="mdui-divider mdui-m-y-0"></li>
+                    <div class="sidebar-tag">
+                        <a href="http://81.68.101.184/me/index.php/tag/First/" data-pjax-state="">
+                            <div class="mdui-chip">
+                                <span class="mdui-chip-title">First</span>
+                            </div>
+                        </a>
+                        <a href="http://81.68.101.184/me/index.php/tag/%E6%AF%8F%E5%91%A8%E6%80%BB%E7%BB%93/"
+                            data-pjax-state="">
+                            <div class="mdui-chip">
+                                <span class="mdui-chip-title">每周总结</span>
+                            </div>
+                        </a>
+                        <a href="http://81.68.101.184/me/index.php/tag/%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/"
+                            data-pjax-state="">
+                            <div class="mdui-chip">
+                                <span class="mdui-chip-title">知识点总结</span>
+                            </div>
+                        </a>
+                    </div>
+                </ul>
+            </div> -->
+            <!-- <div class="mdui-card mdui-hoverable sidebar-module">
+                <ul class="mdui-list">
+                    <div class="sidebar-module-title">友情链接</div>
+                    <li class="mdui-divider mdui-m-y-0"></li>
+                    <div class="mdui-row-xs-2">
+
+                        <div class="mdui-col">
+                            <a target="_blank" href="http://81.68.101.184/lv/">
+                                <li class="mdui-list-item mdui-ripple sidebar-module-list">
+                                    <div class="sidebar-reply-text">pilot-暔寻</div>
+                                </li>
+                            </a>
+                        </div>
+                    </div>
+                </ul>
+            </div> -->
+        </div>
+        <span class="mdui-text-color-theme"></span>
+    </div>
+
+    <div onclick="tocOverlay()" class="toc-overlay"></div>
+    <button class="mdui-fab mdui-fab-fixed mdui-ripple top mdui-color-theme-accent mdui-fab-hide"><i
+            class="mdui-icon material-icons">arrow_upward</i></button>
+    <footer>
+        <p>© 2022 <a href="http://81.68.101.184/me/" data-pjax-state="">1514</a><br><br><span id="cuckoo-copy">Theme <a
+                    href="https://github.com/bhaoo/cuckoo" target="_blank">Cuckoo</a> by <a href="https://dwd.moe/"
+                    target="_blank">Bhao</a>｜Powered By <a href="http://www.typecho.org/"
+                    target="_blank">Typecho</a></span></p>
+    </footer>
+    <script src="../js/jquery-1.12.4.min.js"></script>
+    <script src="../js/left.js"></script>
+    <script src="../js/content.js"></script>
+</body>
+
+</html>
