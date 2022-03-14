@@ -1,0 +1,337 @@
+<html class=" ">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
+
+
+    <title>1514’s Blog</title>
+
+
+    <link rel="shortcut icon" href="http://81.68.101.184/me/usr/themes/Cuckoo/assets/images/favicon.ico">
+    <link rel="stylesheet" href="css/mdui.min.css">
+    <link rel="stylesheet" href="css/cuckoo.min.css">
+    <link rel="stylesheet" href="css/atom-one-dark.min.css">
+    <link rel="stylesheet" href="css/iconfont.min.css">
+    <link rel="stylesheet" href="css/fancybox.min.css">
+
+    <style>
+        .index-filter {
+            display: none
+        }
+    </style>
+    <style>
+        .comment-textarea {
+            background-image: url("http://81.68.101.184/me/usr/themes/Cuckoo/assets/images/textarea.png");
+        }
+
+        .index-img {
+            background-image: url("http://81.68.101.184/me/usr/themes/Cuckoo/assets/images/loading.gif")
+        }
+    </style>
+    <style>
+        .background {
+            background-image: url("http://81.68.101.184/me/usr/themes/Cuckoo/assets/images/bg.jpg");
+        }
+    </style>
+    <style>
+        html {
+            --color: rgb(33, 150, 243);
+        }
+    </style>
+</head>
+
+<body class="mdui-theme-primary-blue mdui-theme-accent-blue mdui-loaded">
+    <div class="background">
+        <div class="index-filter"></div>
+    </div>
+
+    <div
+        class="mdui-appbar mdui-shadow-0 mdui-appbar-fixed mdui-appbar-scroll-hide mdui-headroom mdui-headroom-pinned-top">
+        <div class="mdui-toolbar">
+            <a class="mdui-btn mdui-btn-icon"
+                mdui-drawer="{target: &#39;.drawer&#39;, swipe: &#39;true&#39;, overlay: &#39;false&#39;}">
+                <i class="mdui-icon material-icons">menu</i>
+            </a>
+            <a href="http://81.68.101.184/me/" class="mdui-typo-title" data-pjax-state="">1514’s Blog</a>
+            <div class="mdui-toolbar-spacer"></div>
+            <div class="mdui-textfield mdui-textfield-expandable mdui-float-right appbar-search">
+                <button class="mdui-textfield-icon mdui-btn mdui-btn-icon"><i
+                        class="mdui-icon material-icons">search</i></button>
+                <form id="search" method="post" action="http://81.68.101.184/me/" role="search">
+                    <input class="mdui-textfield-input" type="text" id="s" name="s" placeholder="搜索一下">
+                    <button type="submit" style="display:none;">搜索</button>
+                </form>
+                <button class="mdui-textfield-close mdui-btn mdui-btn-icon"><i
+                        class="mdui-icon material-icons">close</i></button>
+            </div>
+            <button class="mdui-btn mdui-btn-icon qrcode" mdui-menu="{target: &#39;#qrcode&#39;}"
+                mdui-tooltip="{content: &#39;跨设备阅读&#39;}" style="display: none;"><i
+                    class="mdui-icon material-icons">devices</i></button>
+            <div class="mdui-menu" id="qrcode"
+                style="width: 170px;height: 170px;transform-origin: 100% 0px; position: fixed; text-align:center;">
+                <div style="margin-top: 63px;" class="mdui-spinner mdui-spinner-colorful">
+                    <div class="mdui-spinner-layer mdui-spinner-layer-1">
+                        <div class="mdui-spinner-circle-clipper mdui-spinner-left">
+                            <div class="mdui-spinner-circle"></div>
+                        </div>
+                        <div class="mdui-spinner-gap-patch">
+                            <div class="mdui-spinner-circle"></div>
+                        </div>
+                        <div class="mdui-spinner-circle-clipper mdui-spinner-right">
+                            <div class="mdui-spinner-circle"></div>
+                        </div>
+                    </div>
+                    <div class="mdui-spinner-layer mdui-spinner-layer-2">
+                        <div class="mdui-spinner-circle-clipper mdui-spinner-left">
+                            <div class="mdui-spinner-circle"></div>
+                        </div>
+                        <div class="mdui-spinner-gap-patch">
+                            <div class="mdui-spinner-circle"></div>
+                        </div>
+                        <div class="mdui-spinner-circle-clipper mdui-spinner-right">
+                            <div class="mdui-spinner-circle"></div>
+                        </div>
+                    </div>
+                    <div class="mdui-spinner-layer mdui-spinner-layer-3">
+                        <div class="mdui-spinner-circle-clipper mdui-spinner-left">
+                            <div class="mdui-spinner-circle"></div>
+                        </div>
+                        <div class="mdui-spinner-gap-patch">
+                            <div class="mdui-spinner-circle"></div>
+                        </div>
+                        <div class="mdui-spinner-circle-clipper mdui-spinner-right">
+                            <div class="mdui-spinner-circle"></div>
+                        </div>
+                    </div>
+                    <div class="mdui-spinner-layer mdui-spinner-layer-4">
+                        <div class="mdui-spinner-circle-clipper mdui-spinner-left">
+                            <div class="mdui-spinner-circle"></div>
+                        </div>
+                        <div class="mdui-spinner-gap-patch">
+                            <div class="mdui-spinner-circle"></div>
+                        </div>
+                        <div class="mdui-spinner-circle-clipper mdui-spinner-right">
+                            <div class="mdui-spinner-circle"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button onclick="brightness()" id="brightness" class="mdui-textfield-close mdui-btn mdui-btn-icon"><i
+                    class="mdui-icon material-icons">brightness_5</i></button>
+        </div>
+    </div>
+    <div class="mdui-drawer mdui-drawer-full-height drawer mdui-drawer-close">
+        <div class="drawer-img"><img class="mdui-img-circle" src="css/me.jpg"></div>
+        <div class="drawer-contact">
+            <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;site=qq&amp;menu=yes&amp;uin=2634917964"><button
+                    class="mdui-btn mdui-btn-icon mdui-ripple"><i class="iconfont icon-qq"></i></button></a>
+        </div>
+        <div class="mdui-divider"></div>
+        <ul class="mdui-list drawer-list" mdui-collapse="{accordion: true}">
+            <a data-pjax-state="load">
+                <li class="mdui-list-item mdui-ripple"><i class="mdui-list-item-icon mdui-icon material-icons">home</i>
+                    <div class="mdui-list-item-content">首页</div>
+                </li>
+            </a>
+            <li class="mdui-collapse-item mdui-collapse-item-open">
+                <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+                    <i class="mdui-icon material-icons mdui-list-item-icon">view_list</i>
+                    <div class="mdui-list-item-content">分类</div>
+                    <!-- <i
+                        class="mdui-icon material-icons mdui-list-item-icon mdui-collapse-item-arrow">keyboard_arrow_down</i> -->
+                        <i
+                        class="mdui-icon material-icons mdui-list-item-icon mdui-collapse-item-arrow" style="transform: rotate(0deg)">keyboard_arrow_down</i>
+                </div>
+                <ul class="mdui-collapse-item-body mdui-list mdui-list-dense" style="height: auto;"><a
+                        href="http://81.68.101.184/me/index.php/category/default/" class="mdui-list-item mdui-ripple"
+                        mdui-drawer-close="" data-pjax-state="">
+                        <div class="mdui-list-item-content">总结</div>
+                        <div class="drawer-item">总结</div>
+                    </a><a href="http://81.68.101.184/me/index.php/category/First/" class="mdui-list-item mdui-ripple"
+                        mdui-drawer-close="" data-pjax-state="">
+                        <div class="mdui-list-item-content">算法</div>
+                        <div class="drawer-item">算法</div>
+                    </a><a href="http://81.68.101.184/me/index.php/category/conclusion/"
+                        class="mdui-list-item mdui-ripple" mdui-drawer-close="" data-pjax-state="">
+                        <div class="mdui-list-item-content">项目</div>
+                        <div class="drawer-item">项目</div>
+                    </a><a href="http://81.68.101.184/me/index.php/category/essays/" class="mdui-list-item mdui-ripple"
+                        mdui-drawer-close="" data-pjax-state="">
+                        <div class="mdui-list-item-content">面试</div>
+                        <div class="drawer-item">面试</div>
+                    </a></ul>
+            </li>
+            <li class="mdui-collapse-item">
+                <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+                    <i class="mdui-icon material-icons mdui-list-item-icon">access_time</i>
+                    <div class="mdui-list-item-content">归档</div>
+                    <i
+                        class="mdui-icon material-icons mdui-list-item-icon mdui-collapse-item-arrow">keyboard_arrow_down</i>
+                </div>
+                <ul class="mdui-collapse-item-body mdui-list mdui-list-dense"><a
+                        href="http://81.68.101.184/me/index.php/2021/10/" class="mdui-list-item mdui-ripple"
+                        mdui-drawer-close="" data-pjax-state="">
+                        <div class="mdui-list-item-content">2021 年 10 月</div>
+                        <div class="drawer-item">4</div>
+                    </a><a href="http://81.68.101.184/me/index.php/2021/09/" class="mdui-list-item mdui-ripple"
+                        mdui-drawer-close="" data-pjax-state="">
+                        <div class="mdui-list-item-content">2021 年 09 月</div>
+                        <div class="drawer-item">6</div>
+                    </a><a href="http://81.68.101.184/me/index.php/2021/08/" class="mdui-list-item mdui-ripple"
+                        mdui-drawer-close="" data-pjax-state="">
+                        <div class="mdui-list-item-content">2021 年 08 月</div>
+                        <div class="drawer-item">3</div>
+                    </a><a href="http://81.68.101.184/me/index.php/2021/07/" class="mdui-list-item mdui-ripple"
+                        mdui-drawer-close="" data-pjax-state="">
+                        <div class="mdui-list-item-content">2021 年 07 月</div>
+                        <div class="drawer-item">3</div>
+                    </a><a href="http://81.68.101.184/me/index.php/2021/06/" class="mdui-list-item mdui-ripple"
+                        mdui-drawer-close="" data-pjax-state="">
+                        <div class="mdui-list-item-content">2021 年 06 月</div>
+                        <div class="drawer-item">2</div>
+                    </a><a href="http://81.68.101.184/me/index.php/2021/05/" class="mdui-list-item mdui-ripple"
+                        mdui-drawer-close="" data-pjax-state="">
+                        <div class="mdui-list-item-content">2021 年 05 月</div>
+                        <div class="drawer-item">3</div>
+                    </a><a href="http://81.68.101.184/me/index.php/2021/04/" class="mdui-list-item mdui-ripple"
+                        mdui-drawer-close="" data-pjax-state="">
+                        <div class="mdui-list-item-content">2021 年 04 月</div>
+                        <div class="drawer-item">3</div>
+                    </a><a href="http://81.68.101.184/me/index.php/2021/03/" class="mdui-list-item mdui-ripple"
+                        mdui-drawer-close="" data-pjax-state="">
+                        <div class="mdui-list-item-content">2021 年 03 月</div>
+                        <div class="drawer-item">5</div>
+                    </a><a href="http://81.68.101.184/me/index.php/2021/02/" class="mdui-list-item mdui-ripple"
+                        mdui-drawer-close="" data-pjax-state="">
+                        <div class="mdui-list-item-content">2021 年 02 月</div>
+                        <div class="drawer-item">2</div>
+                    </a><a href="http://81.68.101.184/me/index.php/2021/01/" class="mdui-list-item mdui-ripple"
+                        mdui-drawer-close="" data-pjax-state="">
+                        <div class="mdui-list-item-content">2021 年 01 月</div>
+                        <div class="drawer-item">3</div>
+                    </a><a href="http://81.68.101.184/me/index.php/2020/12/" class="mdui-list-item mdui-ripple"
+                        mdui-drawer-close="" data-pjax-state="">
+                        <div class="mdui-list-item-content">2020 年 12 月</div>
+                        <div class="drawer-item">3</div>
+                    </a></ul>
+            </li>
+            <div class="mdui-divider"></div><a
+                class="mdui-list-item mdui-ripple" mdui-drawer-close="" data-pjax-state="">
+                <i class="mdui-icon material-icons mdui-list-item-icon">chat</i>
+                <div class="mdui-list-item-content">留言板</div>
+            </a><a class="mdui-list-item mdui-ripple"
+                mdui-drawer-close="" data-pjax-state="">
+                <i class="mdui-icon material-icons mdui-list-item-icon">view_carousel</i>
+                <div class="mdui-list-item-content">番剧</div>
+            </a><a class="mdui-list-item mdui-ripple"
+                mdui-drawer-close="" data-pjax-state="">
+                <i class="mdui-icon material-icons mdui-list-item-icon">links</i>
+                <div class="mdui-list-item-content">友人帐</div>
+            </a><a class="mdui-list-item mdui-ripple"
+                mdui-drawer-close="" data-pjax-state="">
+                <i class="mdui-icon material-icons mdui-list-item-icon">sort</i>
+                <div class="mdui-list-item-content">我们仨</div>
+            </a>
+        </ul>
+    </div>
+    <div class="index-container">
+        <div class="mdui-col-md-8">
+            <!-- 各种文章的介绍 -->
+            <div class="article">
+                
+            </div>
+            <a class="next" title="" href="http://81.68.101.184/me/index.php/page/2/" data-pjax-state=""
+                style="display: none;">下一页</a>
+            <div class="changePage changePage-end">
+                <span class="infinite-scroll-request">加载中...</span>
+                <span class="infinite-scroll-last">到底了啦</span>
+            </div>
+            <!-- <div class="changePage changePage-load">加载更多</div> -->
+            <div class="changePage changePage-load">到底了啦</div>
+            <div class="checkLast"></div>
+        </div>
+        <!-- 右侧个人信息 -->
+        <div class="mdui-col-md-4">
+
+            <!-- 昵称和介绍 -->
+            <div class="mdui-card mdui-hoverable sidebar-info">
+                <div class="sidebar-info-img">
+                    <div class="sidebar-info-bg"
+                        style="background-image: url(&#39;http://81.68.101.184/me/usr/themes/Cuckoo/assets/images/sidebar.jpg&#39;)">
+                    </div>
+                    <div class="mdui-img-circle mdui-shadow-3"
+                        style="background-image: url(&#39;http://81.68.101.184/me/usr/themes/Cuckoo/assets/images/me.jpg&#39;)">
+                    </div>
+                </div>
+                <div class="sidebar-info-body">
+                    <div class="sidebar-info-name">1514</div>
+                    <div class="sidebar-info-desc">如果有一个喜欢你的人出现，一定不要凶她哦！</div>
+                </div>
+            </div>
+
+            <!-- 标签云 -->
+            <!-- <div class="mdui-card mdui-hoverable sidebar-module">
+                <ul class="mdui-list">
+                    <div class="sidebar-module-title">标签云</div>
+                    <li class="mdui-divider mdui-m-y-0"></li>
+                    <div class="sidebar-tag">
+                        <a href="http://81.68.101.184/me/index.php/tag/First/" data-pjax-state="">
+                            <div class="mdui-chip">
+                                <span class="mdui-chip-title">First</span>
+                            </div>
+                        </a>
+                        <a href="http://81.68.101.184/me/index.php/tag/%E6%AF%8F%E5%91%A8%E6%80%BB%E7%BB%93/"
+                            data-pjax-state="">
+                            <div class="mdui-chip">
+                                <span class="mdui-chip-title">每周总结</span>
+                            </div>
+                        </a>
+                        <a href="http://81.68.101.184/me/index.php/tag/%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/"
+                            data-pjax-state="">
+                            <div class="mdui-chip">
+                                <span class="mdui-chip-title">知识点总结</span>
+                            </div>
+                        </a>
+                    </div>
+                </ul>
+            </div> -->
+
+            <!-- 友情链接 -->
+            <!-- <div class="mdui-card mdui-hoverable sidebar-module">
+                <ul class="mdui-list">
+                    <div class="sidebar-module-title">友情链接</div>
+                    <li class="mdui-divider mdui-m-y-0"></li>
+                    <div class="mdui-row-xs-2">
+
+                        <div class="mdui-col">
+                            <a target="_blank" href="http://81.68.101.184/lv/">
+                                <li class="mdui-list-item mdui-ripple sidebar-module-list">
+                                    <div class="sidebar-reply-text">pilot-暔寻</div>
+                                </li>
+                            </a>
+                        </div>
+                    </div>
+                </ul>
+            </div> -->
+
+        </div>
+        <span class="mdui-text-color-theme"></span>
+    </div>
+
+    <div onclick="tocOverlay()" class="toc-overlay"></div>
+    <button class="mdui-fab mdui-fab-fixed mdui-ripple top mdui-color-theme-accent mdui-fab-hide"><i
+            class="mdui-icon material-icons">arrow_upward</i></button>
+    <footer>
+        <p>© 2022 <a href="http://81.68.101.184/me/" data-pjax-state="">1514</a><br><br><span id="cuckoo-copy">Theme <a
+                    href="https://github.com/bhaoo/cuckoo" target="_blank">Cuckoo</a> by <a href="https://dwd.moe/"
+                    target="_blank">Bhao</a>｜Powered By <a href="http://www.typecho.org/"
+                    target="_blank">Typecho</a></span></p>
+    </footer>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/left.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
