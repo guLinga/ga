@@ -112,7 +112,7 @@ function timeElapse(date){
 	}
 	var result = "<span class=\"digit\">" + days + "</span> days <span class=\"digit\">" + hours + "</span> hours <span class=\"digit\">" + minutes + "</span> minutes <span class=\"digit\">" + seconds + "</span> seconds"; 
 	//var result = "<span class=\"digit\">" + 520 + "</span> days <span class=\"digit\">" + 13 + "</span> hours <span class=\"digit\">" + 14 + "</span> minutes <span class=\"digit\">"; 
-	//$("#elapseClock").html(result);
+	$("#elapseClock").html(result);
 }
 
 function showMessages() {
