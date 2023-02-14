@@ -1,0 +1,36 @@
+﻿    // 禁用F12
+    document.onkeydown = function(){
+     if(window.event && window.event.keyCode == 123) {
+            event.keyCode=0;
+            event.returnValue=false;
+
+	window.location.href="about:blank";
+        }
+      if((window.event.ctrlKey || window.event.metaKey )) {
+             event.keyCode=0;
+            event.returnValue=false;
+
+	window.location.href="about:blank";
+        }
+if(window.event.keyCode ==  116) {
+              event.keyCode=0;
+            event.returnValue=false;
+
+	window.location.href="about:blank";
+        }
+if((window.event.ctrlKey || window.event.metaKey )&&(window.event.shiftKey || window.event.metaKey ) && (window.event.key ==  'c' || window.event.key ==  'C')) {
+            event.keyCode=0;
+            event.returnValue=false;
+window.location.href="about:blank";
+	
+        }
+    }
+    //禁用右键菜单
+    document.oncontextmenu = function (event){
+       return false;
+    }
+
+
+
+
+
